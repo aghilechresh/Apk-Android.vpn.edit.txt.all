@@ -1,16 +1,14 @@
 [General]
 bypass-system = true
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
-tun-excluded-routes = 0.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.18.0.0/15, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32
-dns-server = system
+tun-excluded-routes = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.18.0.0/15, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32
+dns-server = system, 1.0.0.1
 always-real-ip = stun.l.google.com
-update-url =
+update-url = 
 DIRECT = On
 Host = On 
 # external-controller-access = PASSWORD@0.0.0.0:6155
 ipv6 = true
-
-// REMEMBER TO CHANGE THE external-controller-access' PASSWORD
 
 [Proxy]
 
@@ -25,10 +23,6 @@ Proxy4 = Shadowsocks,172.105.244.165,2376,aes-256-cfb,faBAoD54k87UJG7
 Proxy5 = Shadowsocks,51.15.0.113,989,aes-256-cfb,f8f7aCzcPKbsF8p3
 Proxy6 = Shadowsocks,185.225.19.64,50003,aes-256-cfb,8460400130
 Proxy7 = Shadowsocks,95.174.23.218,989,aes-256-cfb,f8f7aCzcPKbsF8p3
-
-// CUSTOM ALMOST MEANS, SHADOWSOCKS. YOU HAVE TO GET THE SHADOWSOCKS MODULE BEFORE USING SHADOWSOCKS PROXY, HERE'S ONE: https://dl.dropboxusercontent.com/u/760466/SSEncrypt.module
-
-// YOU CAN ADD LOTS OF PROXIES HERE.
 
 [SSID Setting]
 # WiFi-SSID-NAME suspend=true
