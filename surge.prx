@@ -85,26 +85,24 @@ DOMAIN-SUFFIX,jcloudcs.com,Proxy6
 DOMAIN-SUFFIX,lecloud.com,Proxy6
 DOMAIN-SUFFIX,igamecj.com,Proxy6
 
-DOMAIN-SUFFIX,tencent-cloud.net,Proxy6
-DOMAIN-SUFFIX,tencent.com,Proxy6
-DOMAIN-SUFFIX,tencentmind.com,Proxy6
-DOMAIN-SUFFIX,tenpay.com,Proxy6
+DOMAIN-SUFFIX,tencent-cloud.net,DIRECT 
+DOMAIN-SUFFIX,tencent.com,DIRECT 
+DOMAIN-SUFFIX,tencentmind.com,DIRECT 
+DOMAIN-SUFFIX,tenpay.com,DIRECT 
 
 # DIRECT
 
-DOMAIN-SUFFIX,fbcdn.net,Proxy6
-DOMAIN-SUFFIX,gstatic.com,Proxy6
-DOMAIN-SUFFIX,fb.me,Proxy6
-DOMAIN-SUFFIX,goo.gl,Proxy6
-DOMAIN-SUFFIX,gvt1.com,Proxy6
-DOMAIN-SUFFIX,local,Proxy6
-DOMAIN-SUFFIX,t.co,Proxy6
-DOMAIN-SUFFIX,android.com,Proxy1
-DOMAIN-SUFFIX,blogspot.com,Proxy1
-DOMAIN-SUFFIX,blogger.com,Proxy1
-DOMAIN-SUFFIX,ggpht.com,Proxy1
-
-Final,Direct
+DOMAIN-SUFFIX,fbcdn.net,DIRECT 
+DOMAIN-SUFFIX,gstatic.com,DIRECT 
+DOMAIN-SUFFIX,fb.me,DIRECT 
+DOMAIN-SUFFIX,goo.gl,DIRECT 
+DOMAIN-SUFFIX,gvt1.com,DIRECT 
+DOMAIN-SUFFIX,local,DIRECT 
+DOMAIN-SUFFIX,t.co,DIRECT 
+DOMAIN-SUFFIX,android.com,DIRECT 
+DOMAIN-SUFFIX,blogspot.com,DIRECT 
+DOMAIN-SUFFIX,blogger.com,DIRECT 
+DOMAIN-SUFFIX,ggpht.com,DIRECT 
 
 [Host]
 1006-shadow.igamecj.com = 43.130.67.186
