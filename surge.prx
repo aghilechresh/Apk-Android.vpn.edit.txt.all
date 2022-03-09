@@ -45,27 +45,27 @@ AutoGroup = select, url-test, Proxy1, Proxy2, Proxy3, Proxy4, Proxy5, Proxy6, Pr
 // 302 REDIRECT
 
 [Rule]
-DOMAIN-SUFFIX,google.com,Proxy6 
+DOMAIN-SUFFIX,google.com,Proxy1
 DOMAIN-SUFFIX,google.com.hk,Proxy6 
 DOMAIN-SUFFIX,gmail.com,Proxy6 
-DOMAIN-SUFFIX,googledrive.com,Proxy6 
+DOMAIN-SUFFIX,googledrive.com,Proxy1
 DOMAIN-SUFFIX,googleusercontent.com,Proxy6 
 DOMAIN-SUFFIX,googleapis.com,Proxy6 
 DOMAIN-SUFFIX,googlevideo.com,Proxy6 
-DOMAIN-SUFFIX,googlesyndication.com,Proxy6 
+DOMAIN-SUFFIX,googlesyndication.com,Proxy1
 DOMAIN-SUFFIX,wikipedia.org,Proxy6 
 DOMAIN-SUFFIX,wikimedia.org,Proxy6 
-DOMAIN-SUFFIX,youtube.com,Proxy6 
+DOMAIN-SUFFIX,youtube.com,Proxy1
 DOMAIN-SUFFIX,ytimg.com,Proxy6 
 DOMAIN-SUFFIX,twimg.com,Proxy6 
-DOMAIN-SUFFIX,youtu.be,Proxy6 
-DOMAIN-SUFFIX,doubleclick.net,Proxy6 
-DOMAIN-SUFFIX,twitter.com,Proxy6 
-DOMAIN-SUFFIX,github.com,Proxy6 
-DOMAIN-SUFFIX,facebook.com,Proxy6 
-DOMAIN-SUFFIX,googlesource.com,Proxy6 
-DOMAIN-SUFFIX,tumblr.com,Proxy6 
-DOMAIN-SUFFIX,instagram.com,Proxy6 
+DOMAIN-SUFFIX,youtu.be,Proxy1
+DOMAIN-SUFFIX,doubleclick.net,Proxy1
+DOMAIN-SUFFIX,twitter.com,Proxy1
+DOMAIN-SUFFIX,github.com,Proxy1
+DOMAIN-SUFFIX,facebook.com,Proxy1
+DOMAIN-SUFFIX,googlesource.com,Proxy1
+DOMAIN-SUFFIX,tumblr.com,Proxy1
+DOMAIN-SUFFIX,instagram.com,Proxy1
 
 # GCloud
 DOMAIN-SUFFIX,cloudmobi.net,Proxy6
@@ -82,27 +82,27 @@ DOMAIN-SUFFIX,cloudfront.net,Proxy6
 DOMAIN-SUFFIX,alibabacloud.com,Proxy6
 
 DOMAIN-SUFFIX,jcloudcs.com,Proxy6
-DOMAIN-SUFFIX,lecloud.com,Proxy1
-DOMAIN-SUFFIX,igamecj.com,Proxy1
+DOMAIN-SUFFIX,lecloud.com,Proxy6
+DOMAIN-SUFFIX,igamecj.com,Proxy6
 
-DOMAIN-SUFFIX,tencent-cloud.net,Proxy1
-DOMAIN-SUFFIX,tencent.com,Proxy1
-DOMAIN-SUFFIX,tencentmind.com,Proxy1
-DOMAIN-SUFFIX,tenpay.com,Proxy1
+DOMAIN-SUFFIX,tencent-cloud.net,Proxy6
+DOMAIN-SUFFIX,tencent.com,Proxy6
+DOMAIN-SUFFIX,tencentmind.com,Proxy6
+DOMAIN-SUFFIX,tenpay.com,Proxy6
 
 # DIRECT
 
-DOMAIN-SUFFIX,fbcdn.net,DIRECT 
-DOMAIN-SUFFIX,gstatic.com,DIRECT
-DOMAIN-SUFFIX,fb.me,DIRECT 
-DOMAIN-SUFFIX,goo.gl,DIRECT 
-DOMAIN-SUFFIX,gvt1.com,DIRECT 
-DOMAIN-SUFFIX,local,DIRECT 
-DOMAIN-SUFFIX,t.co,DIRECT 
-DOMAIN-SUFFIX,android.com,DIRECT 
-DOMAIN-SUFFIX,blogspot.com,DIRECT 
-DOMAIN-SUFFIX,blogger.com,DIRECT 
-DOMAIN-SUFFIX,ggpht.com,DIRECT 
+DOMAIN-SUFFIX,fbcdn.net,Proxy6
+DOMAIN-SUFFIX,gstatic.com,Proxy6
+DOMAIN-SUFFIX,fb.me,Proxy6
+DOMAIN-SUFFIX,goo.gl,Proxy6
+DOMAIN-SUFFIX,gvt1.com,Proxy6
+DOMAIN-SUFFIX,local,Proxy6
+DOMAIN-SUFFIX,t.co,Proxy6
+DOMAIN-SUFFIX,android.com,Proxy1
+DOMAIN-SUFFIX,blogspot.com,Proxy1
+DOMAIN-SUFFIX,blogger.com,Proxy1
+DOMAIN-SUFFIX,ggpht.com,Proxy1
 
 Final,Direct
 
