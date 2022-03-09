@@ -73,6 +73,29 @@ DOMAIN-SUFFIX,googlesource.com,Proxy6
 DOMAIN-SUFFIX,tumblr.com,Proxy6 
 DOMAIN-SUFFIX,instagram.com,Proxy6 
 
+# GCloud
+DOMAIN-SUFFIX,cloudmobi.net,Proxy6
+DOMAIN-SUFFIX,adcloud.jp,Proxy6
+DOMAIN-SUFFIX,cloudpush.iqiyi.com,Proxy6
+DOMAIN-SUFFIX,cloudapp.net,Proxy6
+DOMAIN-SUFFIX,cloudappsecurity.com,Proxy6
+DOMAIN-SUFFIX,apple-cloudkit.com,Proxy6
+DOMAIN-SUFFIX,icloud-content.com,Proxy6
+DOMAIN-SUFFIX,icloud.com,Proxy6
+DOMAIN-SUFFIX,icloud.com.cn,Proxy6
+DOMAIN-SUFFIX,soundcloud.com,Proxy6
+DOMAIN-SUFFIX,cloudfront.net,Proxy6
+DOMAIN-SUFFIX,alibabacloud.com,Proxy6
+
+DOMAIN-SUFFIX,jcloudcs.com,Proxy6
+DOMAIN-SUFFIX,lecloud.com,Proxy1
+DOMAIN-SUFFIX,igamecj.com,Proxy1
+
+DOMAIN-SUFFIX,tencent-cloud.net,Proxy1
+DOMAIN-SUFFIX,tencent.com,Proxy1
+DOMAIN-SUFFIX,tencentmind.com,Proxy1
+DOMAIN-SUFFIX,tenpay.com,Proxy1
+
 # DIRECT
 
 DOMAIN-SUFFIX,fbcdn.net,DIRECT 
