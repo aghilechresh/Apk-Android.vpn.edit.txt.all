@@ -1,0 +1,270 @@
+[General]
+bypass-system = true
+skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
+tun-excluded-routes = 0.0.0.0/0, 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.18.0.0/15, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32
+dns-server = system, 1.0.0.1
+always-real-ip = stun.l.google.com
+update-url = 
+DIRECT = On
+Host = On 
+# external-controller-access = PASSWORD@0.0.0.0:6155
+ipv6 = true
+
+[Proxy]
+
+Direct = Direct
+
+// ADD YOUR PROXY BELOW, DON'T FORGET TO REMOVE # , THERE'RE 4 TYPES OF PROXIES, YOU HAVE TO PICK UP THE RIGHT ONES.
+
+Turkey = Shadowsocks,141.98.119.180,50003,aes-256-cfb,8460400130
+Germany = Shadowsocks,193.108.118.154,50003,aes-256-cfb,8460400130
+Proxy3 = Shadowsocks,37.1.192.129,55605,aes-256-cfb,ruEvBSp
+Proxy4 = Shadowsocks,172.105.244.165,2376,aes-256-cfb,faBAoD54k87UJG7
+Proxy5 = Shadowsocks,51.15.0.113,989,aes-256-cfb,f8f7aCzcPKbsF8p3
+Proxy6 = Shadowsocks,185.225.19.64,50003,aes-256-cfb,8460400130
+Proxy7 = Shadowsocks,95.174.23.218,989,aes-256-cfb,f8f7aCzcPKbsF8p3
+
+[SSID Setting]
+# WiFi-SSID-NAME suspend=true
+
+// YOU CAN SUSPEND SURGE ON CERTAIN WIFI
+
+[Proxy Group]
+
+Proxy = select, AutoGroup, Turkey, Germany, Proxy3, Proxy4, Proxy5, Proxy6, Proxy7, Direct
+
+AutoGroup = select, url-test, Turkey, Germany, Proxy3, Proxy4, Proxy5, Proxy6, Proxy7, url = http://www.gstatic.com/generate_204
+
+# SSID-Group = ssid, default = Turkey, cellular = Germany, WiFi-SSID-NAME1 = Proxy 3 ,WiFi-SSID-NAME2 = DIRECT
+
+// IF YOU WANT TO CHANGE PROXY BASED ON WiFi SSID, REMOVE THE # ABOVE.
+
+[URL Rewrite]
+^http://www.kenengba.com https://kenengba.com 302
+
+// 302 REDIRECT
+
+[Rule]
+DOMAIN-SUFFIX,google.com,Proxy6
+DOMAIN-SUFFIX,google.com.hk,Proxy6
+DOMAIN-SUFFIX,gmail.com,Proxy6
+DOMAIN-SUFFIX,googledrive.com,Proxy6
+DOMAIN-SUFFIX,googleusercontent.com,Proxy6
+DOMAIN-SUFFIX,googleapis.com,Proxy6
+DOMAIN-SUFFIX,googlevideo.com,Proxy6
+DOMAIN-SUFFIX,googlesyndication.com,Proxy6
+DOMAIN-SUFFIX,wikipedia.org,Proxy6
+DOMAIN-SUFFIX,wikimedia.org,Proxy6 
+DOMAIN-SUFFIX,youtube.com,Proxy6 
+DOMAIN-SUFFIX,ytimg.com,Proxy6 
+DOMAIN-SUFFIX,twimg.com,Proxy6 
+DOMAIN-SUFFIX,youtu.be,Proxy6 
+DOMAIN-SUFFIX,doubleclick.net,Proxy6 
+DOMAIN-SUFFIX,twitter.com,Proxy6 
+DOMAIN-SUFFIX,github.com,Proxy6 
+DOMAIN-SUFFIX,facebook.com,Proxy6 
+DOMAIN-SUFFIX,googlesource.com,Proxy6 
+DOMAIN-SUFFIX,tumblr.com,Proxy6 
+DOMAIN-SUFFIX,instagram.com,Proxy6 
+
+# GCloud
+#DOMAIN-SUFFIX,cloudmobi.net,Proxy1
+#DOMAIN-SUFFIX,adcloud.jp,Proxy1
+#DOMAIN-SUFFIX,cloudpush.iqiyi.com,Proxy1
+#DOMAIN-SUFFIX,cloudapp.net,Proxy1
+#DOMAIN-SUFFIX,cloudappsecurity.com,Proxy1
+#DOMAIN-SUFFIX,apple-cloudkit.com,Proxy1
+#DOMAIN-SUFFIX,icloud-content.com,Proxy1
+#DOMAIN-SUFFIX,icloud.com,Proxy1
+#DOMAIN-SUFFIX,icloud.com.cn,Proxy1
+#DOMAIN-SUFFIX,soundcloud.com,Proxy1
+#DOMAIN-SUFFIX,cloudfront.net,Proxy1
+#DOMAIN-SUFFIX,alibabacloud.com,Proxy1
+
+#DOMAIN-SUFFIX,jcloudcs.com,Proxy1
+#DOMAIN-SUFFIX,lecloud.com,Proxy1
+#DOMAIN-SUFFIX,igamecj.com,Proxy1
+
+#DOMAIN-SUFFIX,tencent-cloud.net,Proxy1
+#DOMAIN-SUFFIX,tencent.com,Proxy1
+#DOMAIN-SUFFIX,tencentmind.com,Proxy1
+#DOMAIN-SUFFIX,tenpay.com,Proxy1
+
+# DIRECT
+
+DOMAIN-SUFFIX,fbcdn.net,DIRECT 
+DOMAIN-SUFFIX,gstatic.com,DIRECT 
+DOMAIN-SUFFIX,fb.me,DIRECT 
+DOMAIN-SUFFIX,goo.gl,DIRECT 
+DOMAIN-SUFFIX,gvt1.com,DIRECT 
+DOMAIN-SUFFIX,local,DIRECT 
+DOMAIN-SUFFIX,t.co,DIRECT 
+DOMAIN-SUFFIX,android.com,DIRECT 
+DOMAIN-SUFFIX,blogspot.com,DIRECT 
+DOMAIN-SUFFIX,blogger.com,DIRECT 
+DOMAIN-SUFFIX,ggpht.com,DIRECT 
+
+[Host]
+1006-shadow.igamecj.com = 43.130.67.186
+2005-shadow.igamecj.com = 51.143.238.235
+2006-shadow.igamecj.com = 20.74.97.243
+2007-shadow.igamecj.com = 20.40.155.7
+2008-shadow.igamecj.com = 162.62.163.72
+3021-shadow.igamecj.com = 162.62.82.121
+3022-shadow.igamecj.com = 20.41.230.213
+4006-shadow.igamecj.com = 43.135.198.137
+5004-shadow.igamecj.com = 20.74.160.14
+5005-shadow.igamecj.com = 77.242.244.61
+abs.twimg.com = 152.199.21.141
+app.adjust.com = 185.151.204.13
+app.adjust.net = 185.151.204.32
+app.adjust.world = 185.151.204.40
+as-hk.shadow.igamecj.com = 43.132.145.56
+as-in.shadow.igamecj.com = 20.44.38.5
+as-mb.shadow.igamecj.com = 129.226.38.23
+as-sg-m.shadow.igamecj.com = 20.195.38.124
+as-sg.shadow.igamecj.com = 101.32.166.95
+asia.csoversea.mbgame.anticheatexpert.com = 101.32.143.232
+astat.bugly.qcloud.com = 150.109.29.135
+b-www.facebook.com = 157.240.9.35
+cdn.wetest.net = 211.152.146.31
+cdn.wetest.qq.com = 219.154.245.197
+cloud.gsdk.proximabeta.com = 49.51.129.54
+cloud.vmp.onezapp.com = 129.226.1.114
+cloudctrl.gcloudsdk.com = 203.205.235.67
+config.emb-api.com = 52.88.167.214
+connectivitycheck.gstatic.com = 142.250.187.99
+cp.cloudflare.com = 104.16.132.229
+crl.identrust.com = 23.58.223.131
+crl.verisign.com = 93.184.220.29
+data.emb-api.com = 52.43.170.207
+de.voice.gcloudcs.com = 49.51.142.191
+dl.gjacky.com = 119.28.33.29
+dl.listdl.com = 2.19.196.90
+dl.tomjson.com = 92.123.224.243
+down.anticheatexpert.com = 2.19.196.112
+download.2.1375135419.igame.gcloudcs.com = 119.28.183.144
+edge-mqtt.facebook.com = 157.240.9.13
+eu-fra.shadow.igamecj.com = 162.62.69.79
+eu-mo.shadow.igamecj.com = 162.62.18.236
+euping.igamecj.com = 162.62.69.43
+euspeed.igamecj.com = 23.90.168.38
+event.textnow.me = 34.198.163.170
+firebaseremoteconfig.googleapis.com = 188.34.182.50
+gcloud-versvr.igamecj.com = 211.152.146.87
+gcloud.download.igamecj.com = 119.28.33.29
+googleads.g.doubleclick.net = 138.201.158.205
+graph.facebook.com = 157.240.9.18
+hk.api.unipay.qq.com = 101.33.11.32
+hk.voice.gcloudcs.com = 203.205.219.148
+hkping.igamecj.com = 43.132.144.70
+hwconfig.gcloudcs.com = 127.0.0.1
+idcconfig.gcloudsdk.com = 203.205.235.68
+ig-us-notice.igamecj.com = 101.32.143.250
+ig-us-sdkapi.igamecj.com = 129.226.3.250
+igame.msdkpass.com = 101.32.143.56
+k.gjacky.com = 2.19.196.99
+kj-se.shadow.igamecj.com = 150.109.243.221
+kj-tk.shadow.igamecj.com = 124.156.227.181
+krping.igamecj.com = 150.109.81.175
+lh3.googleusercontent.com = 188.34.182.50
+me-du.shadow.igamecj.com = 20.45.77.93
+meping.igamecj.com = 162.62.69.242
+mgl.lobby.igamecj.com = 23.88.123.180
+mgl.public.igamecj.com = 119.28.141.193
+midas.gtimg.cn = 104.66.68.50
+mtalk.google.com = 108.177.126.188
+na-centra.shadow.igamecj.com = 104.210.134.1
+na-east.shadow.igamecj.com = 170.106.161.42
+na-mx.shadow.igamecj.com = 119.8.3.225
+na-west.shadow.igamecj.com = 170.106.102.162
+naping.igamecj.com = 170.106.102.245
+napubgm.broker.amsoveasea.com = 129.226.2.165
+naspeed.igamecj.com = 170.106.159.3
+nawzryhwatm.broker.amsoveasea.com = 129.226.2.165
+ocsp.verisign.com = 23.52.27.27
+pandora.game.qq.com = 101.91.63.139
+pandoracdn.amsoveasea.com = 23.58.223.210
+pay.igamecj.com = 119.28.201.65
+pbs.twimg.com = 184.31.10.237
+platform-lookaside.fbsbx.com = 157.240.9.23
+play-fe.googleapis.com = 188.34.182.50
+play.googleapis.com = 142.250.186.170
+playreview.igamecj.com = 101.32.133.110
+puffer.4.1375135419.igame.gcloudcs.com = 119.28.183.144
+px-conf.perimeterx.net = 34.149.170.116
+qos.hk.gcloudcs.com = 150.109.95.159
+sa-sap-m.shadow.igamecj.com = 20.195.202.218
+sa-sap.shadow.igamecj.com = 119.8.81.14
+sa-scl.shadow.igamecj.com = 119.8.152.247
+safebrowsing.googleapis.com = 172.217.17.106
+saping.igamecj.com = 119.8.80.117
+sg.tdatamaster.com = 150.109.0.77
+sun6-21.userapi.com = 95.142.206.1
+sun6-22.userapi.com = 95.142.206.2
+sun6-23.userapi.com = 95.142.206.3
+tencentgames.helpshift.com = 52.207.26.33
+thirdqq.qlogo.cn = 43.135.105.66
+thirdwx.qlogo.cn = 203.205.234.156
+www.google.com = 142.250.186.132
+www.googletagmanager.com = 216.58.206.200
+www.midasbuy.com = 101.33.11.32
+www.msftconnecttest.com = 13.107.4.52
+www.pubgmobile.com = 92.123.194.185
+x1.c.lencr.org = 104.66.88.118
+youtubei.googleapis.com = 37.152.182.112
+119.28.114.175 = 172.217.194.132 
+logspot.l.googleusercontent.com = 119.28.114.175  
+pandora.game.qq.com = 119.28.207.225
+www.daojucheng.qq.com = 119.28.207.225
+119.28.207.225 = match.game.qq.com =     
+tmall.qq.com = 119.28.207.225
+gamepay.qq.com = 37.152.182.112
+119.28.207.225 = fwcx.qq.com =  
+yxzj.pandora.game.qq.com = 119.28.207.225
+119.28.207.225 = bbs.nz.qq.com =    
+gi.qqweb.qq.com = 119.28.207.225
+www.pubgmobile.com = 37.152.182.112
+m.facebook.com = 31.13.77.37
+www.facebook.com = 157.240.11.35
+Fbcdn.net = 157.240.0.17
+www.fbcdn.net = 31.13.71.36
+edge-star-shv-01-sea1.facebook.com = 31.13.76.102
+edge-star-shv-01-lax3.facebook.com = 31.13.69.197
+edge-star-shv-01-mia1.facebook.com = 31.13.73.1
+Az-az.facebook.com = 157.240.11.17
+0.facebook.com = 157.240.3.37
+Apps.facebook.com = 157.240.2.20
+yv-in-f94.1e100.net = 74.125.21.94
+free.facebook.com = 31.13.95.37
+edge-star-shv-01-lga3.facebook.com = 31.13.71.1
+edge-star-shv-01-dft4.facebook.com = 157.240.3.19
+m.facebook.com = 31.13.77.37
+www.facebook.com = 157.240.11.35
+Fbcdn.net = 157.240.0.17
+www.fbcdn.net = 31.13.71.36
+edge-star-shv-01-sea1.facebook.com = 31.13.76.102
+edge-star-shv-01-lax3.facebook.com = 31.13.69.197
+edge-star-shv-01-mia1.facebook.com = 31.13.73.1
+Az-az.facebook.com = 157.240.11.17
+0.facebook.com = 157.240.3.37
+Apps.facebook.com = 157.240.2.20
+yv-in-f94.1e100.net = 74.125.21.94
+free.facebook.com = 31.13.95.37
+edge-star-shv-01-lga3.facebook.com = 31.13.71.1
+edge-star-shv-01-dft4.facebook.com = 157.240.3.19
+cafethu7.com = 31.13.74.36
+graph.fb.me = 31.13.74.36
+star-mini.c10r.facebook.com = 31.13.74.36
+www.expresswifi.com = 157.240.2.36
+server-80.freebasics.com = 157.240.2.36
+capk.internet.org = 157.240.2.36
+377m.net = 50.63.202.26
+ad83.net = 50.63.202.26
+arre.co.in = 50.63.202.26
+
+[MITM]
+enable = true
+hostname = *.wikipedia.org,*.youtube.com,*.googlevideo.com,*.qq.com,*.k.sohu.com,*.ydstatic.com,*.youdao.com,img.jiemian.com,www.zhihu.com,huichuan.sm.cn,service.4gtv.tv,*.ofo.com,*.163.com,*.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, *.googlevideo.com
+ca-passphrase = Shadowrocket, Shadowsocks 
+ca-p12 = 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
