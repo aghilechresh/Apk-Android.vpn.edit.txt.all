@@ -16,8 +16,8 @@ Direct = Direct
 
 // ADD YOUR PROXY BELOW, DON'T FORGET TO REMOVE # , THERE'RE 4 TYPES OF PROXIES, YOU HAVE TO PICK UP THE RIGHT ONES.
 
-Proxy1 = Shadowsocks,141.98.119.180,50003,aes-256-cfb,8460400130
-Proxy2 = Shadowsocks,185.219.134.52,50003,aes-256-cfb,8460400130
+Turkey = Shadowsocks,141.98.119.180,50003,aes-256-cfb,8460400130
+Germany = Shadowsocks,193.108.118.154,50003,aes-256-cfb,8460400130
 Proxy3 = Shadowsocks,37.1.192.129,55605,aes-256-cfb,ruEvBSp
 Proxy4 = Shadowsocks,172.105.244.165,2376,aes-256-cfb,faBAoD54k87UJG7
 Proxy5 = Shadowsocks,51.15.0.113,989,aes-256-cfb,f8f7aCzcPKbsF8p3
@@ -31,11 +31,11 @@ Proxy7 = Shadowsocks,95.174.23.218,989,aes-256-cfb,f8f7aCzcPKbsF8p3
 
 [Proxy Group]
 
-Proxy = select, AutoGroup, Proxy1, Proxy2, Proxy3, Proxy4, Proxy5, Proxy6, Proxy7, Direct
+Proxy = select, AutoGroup, Turkey, Germany, Proxy3, Proxy4, Proxy5, Proxy6, Proxy7, Direct
 
-AutoGroup = select, url-test, Proxy1, Proxy2, Proxy3, Proxy4, Proxy5, Proxy6, Proxy7, url = http://www.gstatic.com/generate_204
+AutoGroup = select, url-test, Turkey, Germany, Proxy3, Proxy4, Proxy5, Proxy6, Proxy7, url = http://www.gstatic.com/generate_204
 
-# SSID-Group = ssid, default = Proxy1, cellular = Proxy2, WiFi-SSID-NAME1 = Proxy 3 ,WiFi-SSID-NAME2 = DIRECT
+# SSID-Group = ssid, default = Turkey, cellular = Germany, WiFi-SSID-NAME1 = Proxy 3 ,WiFi-SSID-NAME2 = DIRECT
 
 // IF YOU WANT TO CHANGE PROXY BASED ON WiFi SSID, REMOVE THE # ABOVE.
 
@@ -45,27 +45,27 @@ AutoGroup = select, url-test, Proxy1, Proxy2, Proxy3, Proxy4, Proxy5, Proxy6, Pr
 // 302 REDIRECT
 
 [Rule]
-DOMAIN-SUFFIX,google.com,Proxy5
-DOMAIN-SUFFIX,google.com.hk,Proxy5
-DOMAIN-SUFFIX,gmail.com,Proxy5
-DOMAIN-SUFFIX,googledrive.com,Proxy5
-DOMAIN-SUFFIX,googleusercontent.com,Proxy5
-DOMAIN-SUFFIX,googleapis.com,Proxy5
-DOMAIN-SUFFIX,googlevideo.com,Proxy5
-DOMAIN-SUFFIX,googlesyndication.com,Proxy5
-DOMAIN-SUFFIX,wikipedia.org,Proxy5
-DOMAIN-SUFFIX,wikimedia.org,Proxy5
-DOMAIN-SUFFIX,youtube.com,Proxy5
-DOMAIN-SUFFIX,ytimg.com,Proxy5
-DOMAIN-SUFFIX,twimg.com,Proxy5
-DOMAIN-SUFFIX,youtu.be,Proxy5
-DOMAIN-SUFFIX,doubleclick.net,Proxy5
-DOMAIN-SUFFIX,twitter.com,Proxy5
-DOMAIN-SUFFIX,github.com,Proxy5
-DOMAIN-SUFFIX,facebook.com,Proxy5
-DOMAIN-SUFFIX,googlesource.com,Proxy5
-DOMAIN-SUFFIX,tumblr.com,Proxy5
-DOMAIN-SUFFIX,instagram.com,Proxy5
+DOMAIN-SUFFIX,google.com,Germany
+DOMAIN-SUFFIX,google.com.hk,Germany
+DOMAIN-SUFFIX,gmail.com,Germany
+DOMAIN-SUFFIX,googledrive.com,Germany
+DOMAIN-SUFFIX,googleusercontent.com,Germany
+DOMAIN-SUFFIX,googleapis.com,Germany
+DOMAIN-SUFFIX,googlevideo.com,Germany
+DOMAIN-SUFFIX,googlesyndication.com,Germany
+DOMAIN-SUFFIX,wikipedia.org,Germany
+DOMAIN-SUFFIX,wikimedia.org,Germany 
+DOMAIN-SUFFIX,youtube.com,Germany 
+DOMAIN-SUFFIX,ytimg.com,Germany 
+DOMAIN-SUFFIX,twimg.com,Germany 
+DOMAIN-SUFFIX,youtu.be,Germany 
+DOMAIN-SUFFIX,doubleclick.net,Germany 
+DOMAIN-SUFFIX,twitter.com,Germany 
+DOMAIN-SUFFIX,github.com,Germany 
+DOMAIN-SUFFIX,facebook.com,Germany 
+DOMAIN-SUFFIX,googlesource.com,Germany 
+DOMAIN-SUFFIX,tumblr.com,Germany 
+DOMAIN-SUFFIX,instagram.com,Germany 
 
 # GCloud
 #DOMAIN-SUFFIX,cloudmobi.net,Proxy1
@@ -92,17 +92,17 @@ DOMAIN-SUFFIX,instagram.com,Proxy5
 
 # DIRECT
 
-DOMAIN-SUFFIX,fbcdn.net,Proxy6
-DOMAIN-SUFFIX,gstatic.com,Proxy6
-DOMAIN-SUFFIX,fb.me,Proxy6
-DOMAIN-SUFFIX,goo.gl,Proxy6
-DOMAIN-SUFFIX,gvt1.com,Proxy6
-DOMAIN-SUFFIX,local,Proxy6
-DOMAIN-SUFFIX,t.co,Proxy6
-DOMAIN-SUFFIX,android.com,Proxy6
-DOMAIN-SUFFIX,blogspot.com,Proxy6
-DOMAIN-SUFFIX,blogger.com,Proxy6
-DOMAIN-SUFFIX,ggpht.com,Proxy6
+DOMAIN-SUFFIX,fbcdn.net,DIRECT 
+DOMAIN-SUFFIX,gstatic.com,DIRECT 
+DOMAIN-SUFFIX,fb.me,DIRECT 
+DOMAIN-SUFFIX,goo.gl,DIRECT 
+DOMAIN-SUFFIX,gvt1.com,DIRECT 
+DOMAIN-SUFFIX,local,DIRECT 
+DOMAIN-SUFFIX,t.co,DIRECT 
+DOMAIN-SUFFIX,android.com,DIRECT 
+DOMAIN-SUFFIX,blogspot.com,DIRECT 
+DOMAIN-SUFFIX,blogger.com,DIRECT 
+DOMAIN-SUFFIX,ggpht.com,DIRECT 
 
 [Host]
 1006-shadow.igamecj.com = 43.130.67.186
