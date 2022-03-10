@@ -3,6 +3,7 @@
 
 # Vpn
 Configuration1.yaml
+postern.apk
 
 
 # Edit your video
