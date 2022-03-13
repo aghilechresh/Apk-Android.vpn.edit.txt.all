@@ -46,27 +46,38 @@ AutoGroup = select, url-test, Turkey, Germany, Proxy3, Proxy4, Proxy5, Proxy6, P
 // 302 REDIRECT
 
 [Rule]
-DOMAIN-SUFFIX,google.com,Proxy6
-DOMAIN-SUFFIX,google.com.hk,Proxy6
-DOMAIN-SUFFIX,gmail.com,Proxy6
-DOMAIN-SUFFIX,googledrive.com,Proxy6
-DOMAIN-SUFFIX,googleusercontent.com,Proxy6
-DOMAIN-SUFFIX,googleapis.com,Proxy6
-DOMAIN-SUFFIX,googlevideo.com,Proxy6
-DOMAIN-SUFFIX,googlesyndication.com,Proxy6
-DOMAIN-SUFFIX,wikipedia.org,Proxy6
-DOMAIN-SUFFIX,wikimedia.org,Proxy6 
-DOMAIN-SUFFIX,youtube.com,Proxy6 
-DOMAIN-SUFFIX,ytimg.com,Proxy6 
-DOMAIN-SUFFIX,twimg.com,Proxy6 
-DOMAIN-SUFFIX,youtu.be,Proxy6 
-DOMAIN-SUFFIX,doubleclick.net,Proxy6 
-DOMAIN-SUFFIX,twitter.com,Proxy6 
-DOMAIN-SUFFIX,github.com,Proxy6 
-DOMAIN-SUFFIX,facebook.com,Proxy6 
-DOMAIN-SUFFIX,googlesource.com,Proxy6 
-DOMAIN-SUFFIX,tumblr.com,Proxy6 
-DOMAIN-SUFFIX,instagram.com,Proxy6 
+DOMAIN-SUFFIX,google.com,Proxy6   
+DOMAIN-SUFFIX,gstatic.com,Proxy6   
+DOMAIN-SUFFIX,google.com.hk,Proxy6   
+DOMAIN-SUFFIX,gmail.com,Proxy6   
+DOMAIN-SUFFIX,googledrive.com,Proxy6   
+DOMAIN-SUFFIX,googleusercontent.com,Proxy6   
+DOMAIN-SUFFIX,android.com,Proxy6   
+DOMAIN-SUFFIX,googleapis.com,Proxy6   
+DOMAIN-SUFFIX,googlevideo.com,Proxy6   
+DOMAIN-SUFFIX,googlesyndication.com,Proxy6   
+DOMAIN-SUFFIX,wikipedia.org,Proxy6   
+DOMAIN-SUFFIX,wikimedia.org,Proxy6   
+DOMAIN-SUFFIX,youtube.com,Proxy6   
+DOMAIN-SUFFIX,ytimg.com,Proxy6   
+DOMAIN-SUFFIX,twimg.com,Proxy6   
+DOMAIN-SUFFIX,youtu.be,Proxy6   
+DOMAIN-SUFFIX,doubleclick.net,Proxy6   
+DOMAIN-SUFFIX,t.co,Proxy6   
+DOMAIN-SUFFIX,twitter.com,Proxy6   
+DOMAIN-SUFFIX,github.com,Proxy6   
+DOMAIN-SUFFIX,blogspot.com,Proxy6   
+DOMAIN-SUFFIX,blogger.com,Proxy6   
+DOMAIN-SUFFIX,ggpht.com,Proxy6   
+DOMAIN-SUFFIX,facebook.com,Proxy6   
+DOMAIN-SUFFIX,fbcdn.net,Proxy6   
+DOMAIN-SUFFIX,googlesource.com,Proxy6   
+DOMAIN-SUFFIX,tumblr.com,Proxy6   
+DOMAIN-SUFFIX,instagram.com,Proxy6   
+DOMAIN-SUFFIX,fb.me,Proxy6   
+DOMAIN-SUFFIX,goo.gl,Proxy6   
+DOMAIN-SUFFIX,gvt1.com,Proxy6   
+DOMAIN-SUFFIX,local,Proxy6   
 
 # GCloud
 #DOMAIN-SUFFIX,cloudmobi.net,Proxy1
@@ -91,20 +102,7 @@ DOMAIN-SUFFIX,tencent.com,Proxy6
 DOMAIN-SUFFIX,tencentmind.com,Proxy6 
 DOMAIN-SUFFIX,tenpay.com,Proxy6 
 
-
-DOMAIN-SUFFIX,fbcdn.net,Proxy6 
-DOMAIN-SUFFIX,gstatic.com,Proxy6 
-DOMAIN-SUFFIX,fb.me,Proxy6
-DOMAIN-SUFFIX,goo.gl,Proxy6
-DOMAIN-SUFFIX,gvt1.com,Proxy6 
-DOMAIN-SUFFIX,local,Proxy6
-DOMAIN-SUFFIX,t.co,Proxy6
-DOMAIN-SUFFIX,android.com,Proxy6
-DOMAIN-SUFFIX,blogspot.com,Proxy6
-DOMAIN-SUFFIX,blogger.com,Proxy6
-DOMAIN-SUFFIX,ggpht.com,Proxy6
-
-IP-CIDR,127.0.0.1/8,DIRECT
+Final,Direct
  
 [Host]
 1006-shadow.igamecj.com = 43.130.67.186
