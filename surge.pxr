@@ -97,12 +97,10 @@ DOMAIN-SUFFIX,local,Proxy6
 #DOMAIN-SUFFIX,lecloud.com,Proxy1
 #DOMAIN-SUFFIX,igamecj.com,Proxy1
 
-DOMAIN-SUFFIX,tencent-cloud.net,Proxy6 
-DOMAIN-SUFFIX,tencent.com,Proxy6 
-DOMAIN-SUFFIX,tencentmind.com,Proxy6 
-DOMAIN-SUFFIX,tenpay.com,Proxy6 
-
-Final,Direct
+#DOMAIN-SUFFIX,tencent-cloud.net,Proxy6 
+#DOMAIN-SUFFIX,tencent.com,Proxy6 
+#DOMAIN-SUFFIX,tencentmind.com,Proxy6 
+#DOMAIN-SUFFIX,tenpay.com,Proxy6 
  
 [Host]
 1006-shadow.igamecj.com = 43.130.67.186
