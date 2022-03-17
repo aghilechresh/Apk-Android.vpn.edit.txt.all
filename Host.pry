@@ -1,47 +1,168 @@
 [General]
-skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local
-bypass-tun = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
 loglevel = notify
+skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, ::ffff:0:0:0:0/1, ::ffff:128:0:0:0/1
+bypass-tun = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
+dns-server = 1.0.0.1
+ipv6 = true
 
 [Proxy]
-Turkey = ss,141.98.119.180,50003,aes-256-cfb,8460400130
-London = ss,176.10.80.6,989,aes-256-cfb,f8f7aCzcPKbsF8p3
-Italy = ss,95.174.23.218,989,aes-256-cfb,f8f7aCzcPKbsF8p3
-Italy2 = ss,77.247.125.27,50003,aes-256-cfb,f8f7aCzcPKbsF8p3
-Luxembourg = ss,172.255.248.35,989,aes-256-cfb,f8f7aCzcPKbsF8p3
-Proxy5 = ss,185.219.133.176,50003,aes-256-cfb,8460400130
-colodferi = https,1.1.1.1,53, tls=true
-Google = https,8.8.8.8,53, tls=true
-JP = https,adc.com,443, tls=true
-US = https,adc.com,443, tls=true
+Turkey = Shadowsocks,141.98.119.180,50003,aes-256-cfb,8460400130
+London = Shadowsocks,176.10.80.6,989,aes-256-cfb,f8f7aCzcPKbsF8p3
+Italy = Shadowsocks,95.174.23.218,989,aes-256-cfb,f8f7aCzcPKbsF8p3
+Italy2 = Shadowsocks,77.247.125.27,50003,aes-256-cfb,f8f7aCzcPKbsF8p3
+Luxembourg = Shadowsocks,172.255.248.35,989,aes-256-cfb,f8f7aCzcPKbsF8p3
+Proxy = Shadowsocks,185.219.133.176,50003,aes-256-cfb,8460400130
 
 [Proxy Group]
 Proxy = select, url-test,select,HK,SG,JP,US,Turkey,London,Italy,Italy2,Luxembourg,Google,colodferi,Proxy5
 select = url-test,HK,SG,JP,US,Turkey,London,Italy,Italy2,Luxembourg,Google,colodferi,Proxy5
 
 [Rule]
-DOMAIN-SUFFIX,google.com,Proxy5
-DOMAIN-SUFFIX,google.com.hk,Proxy5
-DOMAIN-SUFFIX,gmail.com,Proxy5
-DOMAIN-SUFFIX,googledrive.com,Proxy5
-DOMAIN-SUFFIX,googleusercontent.com,Proxy5
-DOMAIN-SUFFIX,googleapis.com,Proxy5
-DOMAIN-SUFFIX,googlevideo.com,Proxy5
-DOMAIN-SUFFIX,googlesyndication.com,Proxy5
-DOMAIN-SUFFIX,wikipedia.org,Proxy5
-DOMAIN-SUFFIX,wikimedia.org,Proxy5 
-DOMAIN-SUFFIX,youtube.com,Proxy5 
-DOMAIN-SUFFIX,ytimg.com,Proxy5 
-DOMAIN-SUFFIX,twimg.com,Proxy5 
-DOMAIN-SUFFIX,youtu.be,Proxy5 
+DOMAIN-KEYWORD,instagram,Proxy,force-remote-dns
+DOMAIN-KEYWORD,blogspot,Proxy,force-remote-dns
+DOMAIN-KEYWORD,google,Proxy,force-remote-dns
+DOMAIN-KEYWORD,facebook,Proxy,force-remote-dns
+DOMAIN-KEYWORD,youtube,Proxy,force-remote-dns
+DOMAIN-KEYWORD,twitter,Proxy,force-remote-dns
+DOMAIN-KEYWORD,gmail,Proxy,force-remote-dns
+DOMAIN-SUFFIX,twimg.com,Proxy,force-remote-dns
+DOMAIN-SUFFIX,kenengba.com,Proxy,force-remote-dns
+
+DOMAIN,aod.itunes.apple.com,Proxy
+DOMAIN,osxapps.itunes.apple.com,Proxy
+DOMAIN,streamingaudio.itunes.apple.com,Proxy
+DOMAIN-SUFFIX,icloud.com,Proxy
+DOMAIN-SUFFIX,apple.com,Proxy
+DOMAIN-SUFFIX,amazonaws.com,Proxy
+DOMAIN-SUFFIX,android.com,Proxy
+DOMAIN-SUFFIX,angularjs.org,Proxy
+DOMAIN-SUFFIX,appspot.com,Proxy
+DOMAIN-SUFFIX,akamaihd.net,Proxy
+DOMAIN-SUFFIX,amazon.com,Proxy
+DOMAIN-SUFFIX,bit.ly,Proxy
+DOMAIN-SUFFIX,bitbucket.org,Proxy
+DOMAIN-SUFFIX,blog.com,Proxy
+DOMAIN-SUFFIX,blogcdn.com,Proxy
+DOMAIN-SUFFIX,blogger.com,Proxy
+DOMAIN-SUFFIX,blogsmithmedia.com,Proxy
+DOMAIN-SUFFIX,box.net,Proxy
+DOMAIN-SUFFIX,bloomberg.com,Proxy
+DOMAIN-SUFFIX,chromium.org,Proxy
+DOMAIN-SUFFIX,cl.ly,Proxy
+DOMAIN-SUFFIX,cloudfront.net,Proxy
+DOMAIN-SUFFIX,cloudflare.com,Proxy
+DOMAIN-SUFFIX,cocoapods.org,Proxy
+DOMAIN-SUFFIX,crashlytics.com,Proxy
+DOMAIN-SUFFIX,dribbble.com,Proxy
+DOMAIN-SUFFIX,dropbox.com,Proxy
+DOMAIN-SUFFIX,dropboxstatic.com,Proxy
+DOMAIN-SUFFIX,dropboxusercontent.com,Proxy
+DOMAIN-SUFFIX,docker.com,Proxy
+DOMAIN-SUFFIX,duckduckgo.com,Proxy
+DOMAIN-SUFFIX,digicert.com,Proxy
+DOMAIN-SUFFIX,dnsimple.com,Proxy
+DOMAIN-SUFFIX,edgecastcdn.net,Proxy
+DOMAIN-SUFFIX,engadget.com,Proxy
+DOMAIN-SUFFIX,eurekavpt.com,Proxy
+DOMAIN-SUFFIX,fb.me,Proxy
+DOMAIN-SUFFIX,fbcdn.net,Proxy
+DOMAIN-SUFFIX,fc2.com,Proxy
+DOMAIN-SUFFIX,feedburner.com,Proxy
+DOMAIN-SUFFIX,fabric.io,Proxy
+DOMAIN-SUFFIX,flickr.com,Proxy
+DOMAIN-SUFFIX,fastly.net,Proxy
+DOMAIN-SUFFIX,ggpht.com,Proxy
+DOMAIN-SUFFIX,github.com,Proxy
+DOMAIN-SUFFIX,github.io,Proxy
+DOMAIN-SUFFIX,githubusercontent.com,Proxy
+DOMAIN-SUFFIX,golang.org,Proxy
+DOMAIN-SUFFIX,goo.gl,Proxy
+DOMAIN-SUFFIX,gstatic.com,Proxy
+DOMAIN-SUFFIX,godaddy.com,Proxy
+DOMAIN-SUFFIX,gravatar.com,Proxy
+DOMAIN-SUFFIX,imageshack.us,Proxy
+DOMAIN-SUFFIX,imgur.com,Proxy
+DOMAIN-SUFFIX,jshint.com,Proxy
+DOMAIN-SUFFIX,ift.tt,Proxy
+DOMAIN-SUFFIX,itunes.com,Proxy
+DOMAIN-SUFFIX,j.mp,Proxy
+DOMAIN-SUFFIX,kat.cr,Proxy
+DOMAIN-SUFFIX,linode.com,Proxy
+DOMAIN-SUFFIX,linkedin.com,Proxy
+DOMAIN-SUFFIX,licdn.com,Proxy
+DOMAIN-SUFFIX,lithium.com,Proxy
+DOMAIN-SUFFIX,megaupload.com,Proxy
+DOMAIN-SUFFIX,mobile01.com,Proxy
+DOMAIN-SUFFIX,modmyi.com,Proxy
+DOMAIN-SUFFIX,mzstatic.com,Proxy
+DOMAIN-SUFFIX,nytimes.com,Proxy
+DOMAIN-SUFFIX,name.com,Proxy
+DOMAIN-SUFFIX,openvpn.net,Proxy
+DOMAIN-SUFFIX,openwrt.org,Proxy
+DOMAIN-SUFFIX,ow.ly,Proxy
+DOMAIN-SUFFIX,pinboard.in,Proxy
+DOMAIN-SUFFIX,Proxyl-images-amazon.com,Proxy
+DOMAIN-SUFFIX,Proxytatic.net,Proxy
+DOMAIN-SUFFIX,stackoverflow.com,Proxy
+DOMAIN-SUFFIX,staticflickr.com,Proxy
+DOMAIN-SUFFIX,squarespace.com,Proxy
+DOMAIN-SUFFIX,symcd.com,Proxy
+DOMAIN-SUFFIX,symcb.com,Proxy
+DOMAIN-SUFFIX,symauth.com,Proxy
+DOMAIN-SUFFIX,ubnt.com,Proxy
+DOMAIN-SUFFIX,t.co,Proxy
+DOMAIN-SUFFIX,thepiratebay.org,Proxy
+DOMAIN-SUFFIX,tumblr.com,Proxy
+DOMAIN-SUFFIX,twimg.com,Proxy
+DOMAIN-SUFFIX,twitch.tv,Proxy
+DOMAIN-SUFFIX,twitter.com,Proxy
+DOMAIN-SUFFIX,wikipedia.com,Proxy
+DOMAIN-SUFFIX,wikipedia.org,Proxy
+DOMAIN-SUFFIX,wikimedia.org,Proxy
+DOMAIN-SUFFIX,wordpress.com,Proxy
+DOMAIN-SUFFIX,wsj.com,Proxy
+DOMAIN-SUFFIX,wsj.net,Proxy
+DOMAIN-SUFFIX,wp.com,Proxy
+DOMAIN-SUFFIX,vimeo.com,Proxy
+DOMAIN-SUFFIX,youtu.be,Proxy
+DOMAIN-SUFFIX,ytimg.com,Proxy
+
+DOMAIN-SUFFIX,google.com,Luxembourg
+DOMAIN-SUFFIX,google.com.hk,Luxembourg
+DOMAIN-SUFFIX,gmail.com,Luxembourg
+DOMAIN-SUFFIX,googledrive.com,Luxembourg
+DOMAIN-SUFFIX,googleusercontent.com,Luxembourg
+DOMAIN-SUFFIX,googleapis.com,Luxembourg
+DOMAIN-SUFFIX,googlevideo.com,Luxembourg
+DOMAIN-SUFFIX,googlesyndication.com,Luxembourg
+DOMAIN-SUFFIX,wikipedia.org,Luxembourg
+DOMAIN-SUFFIX,wikimedia.org,Luxembourg 
+DOMAIN-SUFFIX,youtube.com,Luxembourg 
+DOMAIN-SUFFIX,ytimg.com,Luxembourg 
+DOMAIN-SUFFIX,twimg.com,Luxembourg 
+DOMAIN-SUFFIX,youtu.be,Luxembourg 
 DOMAIN-SUFFIX,doubleclick.net,Proxy5 
-DOMAIN-SUFFIX,twitter.com,Proxy5 
-DOMAIN-SUFFIX,github.com,Proxy5 
-DOMAIN-SUFFIX,facebook.com,Proxy5 
-DOMAIN-SUFFIX,googlesource.com,Proxy5 
-DOMAIN-SUFFIX,tumblr.com,Proxy5 
-DOMAIN-SUFFIX,instagram.com,Proxy5 
-DOMAIN-SUFFIX,googleadservices.com,Proxy5
+DOMAIN-SUFFIX,twitter.com,Luxembourg 
+DOMAIN-SUFFIX,github.com,Luxembourg 
+DOMAIN-SUFFIX,facebook.com,Luxembourg 
+DOMAIN-SUFFIX,googlesource.com,Luxembourg 
+DOMAIN-SUFFIX,tumblr.com,Luxembourg 
+DOMAIN-SUFFIX,instagram.com,Luxembourg 
+DOMAIN-SUFFIX,googleadservices.com,Luxembourg
+
+IP-CIDR,192.168.0.0/16,DIRECT,force-remote-dns
+IP-CIDR,10.0.0.0/8,DIRECT,force-remote-dns
+IP-CIDR,172.16.0.0/12,DIRECT,force-remote-dns
+IP-CIDR,127.0.0.0/8,DIRECT,force-remote-dns
+
+IP-CIDR,91.108.56.0/22,Proxy,no-resolve
+IP-CIDR,91.108.4.0/22,Proxy,no-resolve
+IP-CIDR,109.239.140.0/24,Proxy,no-resolve
+IP-CIDR,149.154.160.0/20,Proxy,no-resolve
+
+GEOIP,CHTR,US,FR,KN,UA,DIRECT,force-remote-dns
+
+Final,DIRECT,force-remote-dns
 
 [Host]
 1006-shadow.igamecj.com = 43.130.67.186
