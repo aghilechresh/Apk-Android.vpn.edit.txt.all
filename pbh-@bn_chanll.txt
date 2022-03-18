@@ -11,7 +11,7 @@
 185.151.204.7        app.adjust.com	
 49.51.129.54        cloud.gsdk.proximabeta.com	
 129.226.1.114        cloud.vmp.onezapp.com	
-101.32.143.250        ig-us-notice.igamecj.com	
+49.51.177.134        ig-us-notice.igamecj.com	
 193.192.103.241        down.anticheatexpert.com	
 119.28.183.144        download.2.1375135419.igame.gcloudcs.com	
 101.32.143.247        asia.csoversea.mbgame.anticheatexpert.com	
@@ -20,13 +20,13 @@
 162.62.70.161        mgl.lobby.igamecj.com	
 203.205.235.68        idcconfig.gcloudsdk.com	
 203.205.219.148        hk.voice.gcloudcs.com	
-119.28.201.65        pay.igamecj.com	
+49.51.130.63        pay.igamecj.com	
 101.33.11.106        hk.api.unipay.qq.com	
 101.91.63.139        pandora.game.qq.com	
 129.226.2.165        nawzryhwatm.broker.amsoveasea.com	
 129.226.2.165        napubgm.broker.amsoveasea.com	
 104.66.68.50        midas.gtimg.cn	
-119.28.111.214        qos.hk.gcloudcs.com	
+150.109.95.159        qos.hk.gcloudcs.com	
 101.33.11.106        www.midasbuy.com	
 162.62.69.73        euping.igamecj.com	
 170.106.102.245        naping.igamecj.com	
@@ -49,7 +49,7 @@
 20.40.155.6        2007-shadow.igamecj.com	
 20.195.37.189        as-sg-m.shadow.igamecj.com	
 162.62.80.10        3021-shadow.igamecj.com	
-101.32.164.92        as-sg.shadow.igamecj.com	
+101.32.164.117        as-sg.shadow.igamecj.com	
 43.132.144.229        as-hk.shadow.igamecj.com	
 129.226.37.228        as-mb.shadow.igamecj.com	
 20.44.35.200        as-in.shadow.igamecj.com	
