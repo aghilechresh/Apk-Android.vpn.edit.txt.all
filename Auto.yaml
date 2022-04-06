@@ -1350,4 +1350,4 @@ rules:
   - DOMAIN-SUFFIX,google.com,Auto
   - DOMAIN-KEYWORD,google,Auto
   - DOMAIN,google.com,Auto
-  - MATCH,,Auto 
+  - MATCH,,Auto,dns-failed
