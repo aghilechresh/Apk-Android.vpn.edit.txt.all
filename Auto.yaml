@@ -1,6 +1,6 @@
 mixed-port: 1111
 mode: rule
-allow-lan: true
+allow-lan: false
 log-level: info
 external-controller: 127.0.0.1:9090
 experimental:
